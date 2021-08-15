@@ -1,0 +1,1 @@
+# Stock-widget-visualizer

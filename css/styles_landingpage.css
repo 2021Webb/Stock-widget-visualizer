@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'Allerta-Stencil';
+    src:url('Allerta-Stencil.ttf.woff') format('woff'),
+        url('Allerta-Stencil.ttf.svg#Allerta-Stencil') format('svg'),
+        url('Allerta-Stencil.ttf.eot'),
+        url('Allerta-Stencil.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ul, ul a
+{
+	list-style-type: none;
+	color: black;
+	text-decoration: none;
+	vertical-align: middle;
+	display: inline-block;
+}
+.one li
+{
+	display: inline-block;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.navi
+{
+	padding: 20px;
+	right: 500px;
+}
+.logo
+{
+	padding: 20px;
+}
+.login
+{
+	padding: 20px;
+	right: 0px;
+}
+.one
+{
+	position: relative;
+	text-align: center;
+}
+.logo, .navi, .login
+{
+	position: absolute;
+	top: 0px;
+
+}
+.textOnImage1, .textOnImage3
+{
+	position: absolute;
+	top: 200px;
+	left: 0px;
+}	
+.textOnImage2
+{
+	position: absolute;
+	top: 370px;
+	right: 150px;
+}
+.one img 
+{
+	width: 100%;
+	margin-top: -100px;
+	height: 785px;
+}
+p
+{
+	font: 25px 'FF Tisa Sans Pro' ,Arial, Helvetica;
+	color: white; 
+	padding: 15px;
+}
+.Social, .Products, .Company
+{
+	width: 33.33%;
+	float: left;
+}
+.Footer:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+.Social ul
+{
+	margin-left: 192px; 
+}
+.Products ul
+{
+	margin-left: 180px;
+}
+.Company ul
+{
+	margin-left: 175px;
+}
+.Footer li
+{
+	padding: 5px;
+}
+.Footer
+{
+	background-color: #C0C0C0;
+	margin-top: -7px;
+}
+#text1 
+{
+	color: #000000;
+	font-family: 'Montserrat', sans-serif; 
+	font-weight: 300; 
+	text-transform: uppercase;
+	font-size: 50px;
+	line-height: 1.4;
+	padding-left: 40px;
+}
+#text1_1
+{
+	font-family: 'Lora', serif;
+	color: #000000;
+	padding-left: 40px;
+	font-size: 25px;
+}
+#button1
+{
+	border-radius: 12px;
+	background-color: #f8f8ff;
+	color: #000000;
+	font-family: 'Lora', serif;
+  border: none;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 600px;
+  margin-top: 30px;
+}
+.social_1 img
+{
+	width: 80px;
+}
+.social_1
+{
+	width: 14.2%;
+	float: left;
+	padding: 40px;
+}
+.social:after
+{
+	content: "";
+  display: table;
+  clear: both;
+}
+#heading_for_social
+{
+	color: #000000;
+	padding: 10px;
+	padding-bottom: 30px;
+	font-size: 60px;
+	font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+.social
+{
+	padding: 70px;
+}
+.stock, .crypto, .futures
+{
+	height: 33.33%;
+	border: 2px solid black;
+	padding: 10px;
+	width: 90%;
+	margin: auto;
+	border-radius: 10px;
+}
+.stock img, .crypto img, .futures img
+{
+	width: 200px;
+	height: 200px;
+	float: left;
+	padding-top: 20px;
+}
+.stock p, .crypto p, .futures p
+{
+	color: #000000;
+	font-family: 'Quattrocento', serif;
+	font-size: 20px;
+	padding-left: 250px;
+}
+.stock h2, .crypto h2, .futures h2
+{
+	font-size: 50px;
+	padding: 10px;
+	padding-left: 250px;
+	padding-bottom: 40px;
+	font-family: 'Oswald', sans-serif;
+}
+.stock a, .crypto a, .futures a
+{
+	float: right;
+	margin-right: 40px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #000000;
+}

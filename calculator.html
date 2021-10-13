@@ -29,7 +29,8 @@
 		<div class="cals">
 			<div class="tab">
 				<button class="tablinks" onclick="openCity(event, 'profit')">Profit/Loss calculator</button>
-	  			<button class="tablinks" onclick="openCity(event, 'interest')">Interest calculator</button>			
+	  			<button class="tablinks" onclick="openCity(event, 'interest')">Interest calculator</button>
+	  			<button class="tablinks" onclick="openCity(event, 'currency')">Currency converter</button>			
 			</div>
 
 			<div id="profit" class="tabcontent">
@@ -55,6 +56,19 @@
 				<input type="text" name="duration" id="duration">
 				<button class="submit" onclick="calculate_interest()">Calculate</button>
 			</div>
+
+			<div class="tabcontent" id="currency">
+				<h3 id="heading">CURRENCY CONVERTER</h3>
+				<label style="padding-top: 8%;" for="from">From</label>
+				<input type="text" name="from" id="from">
+				<label for="to">To</label>
+				<p id="result2"></p>
+				<input type="text" name="to" id="to">
+				<label for="amoun">Amount</label>
+				<input type="text" name="amoun" id="amoun">
+				<button class="submit" onclick="convert()">Calculate</button>
+			</div>
+
 		</div>
 
 	</div>

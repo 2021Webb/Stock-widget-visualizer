@@ -51,12 +51,12 @@ ul, ul a
     top: 0px;
 }
 
-#interest
+#interest, #currency
 {
     display: none;
 }
 
-#profit h3, #interest h3
+#profit h3, #interest h3, #currency h3
 {
     font-size: 180%;
     font-family: 'Sora', sans-serif;
@@ -64,7 +64,7 @@ ul, ul a
     text-align: center;
     padding-top: 2%;
 }
-#profit label, #interest label
+#profit label, #interest label, #currency label
 {
     display: block;
     padding: 1%;
@@ -73,13 +73,13 @@ ul, ul a
     font-weight: 200;
     font-size: 120%;
 }
-#profit input, #interest input
+#profit input, #interest input, #currency input
 {
     margin-left: 2%;
     padding: 0.5%;
     padding-right: 10%;
 }
-#result, #result1
+#result, #result1, #result2
 {
     float: right;
     padding-right: 6%;
@@ -87,7 +87,7 @@ ul, ul a
     font-weight: 500;
     font-size: 120%;
 }
-#profit button, #interest button
+#profit button, #interest button, #currency button
 {
     padding: 0.8%;
     border-radius: 10%;

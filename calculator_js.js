@@ -64,3 +64,26 @@ function calculate_interest()
     document.getElementById("result1").innerHTML = "Your principal amount <br>at the end of "+dur+" year(s) is "+Math.trunc(result);
   }
 }
+
+function convert()
+{
+  var from = ($("#from").val());
+  var to = ($("#to").val());
+  var amoun = ($("#amoun").val());
+  var url = "https://currency-converter13.p.rapidapi.com/convert?from="+from+"&to="+to+"&amount="+amoun;
+  const settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": url,
+    "method": "GET",
+    "headers": {
+      "x-rapidapi-host": "currency-converter13.p.rapidapi.com",
+      "x-rapidapi-key": "852305e598msh1de79a9f9de5a20p1e2cacjsned4a66bc146c"
+    }
+  };
+
+  $.ajax(settings).done(function (response) {
+    var res = response["amount"];
+    document.getElementById("result2").innerHTML = amoun+" "+from+" = "+res.toFixed(2)+" "+to;
+  });
+}

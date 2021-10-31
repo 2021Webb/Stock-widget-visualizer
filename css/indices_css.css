@@ -80,15 +80,9 @@ table tr:nth-child(odd)
 {
     background-color:#eee; 
 }
-#gainers th
+#indices th
 {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-}
-#losers th
-{
-    background-color: #FF0000;
+    background-color: #2468ee;
     color: #ffffff;
     text-align: left;
 }
@@ -100,19 +94,15 @@ table tr:nth-of-type(even)
 {
     background-color: #f3f3f3;
 }
-#gainers tr:last-of-type
+#indices tr:last-of-type
 {
-    border-bottom: 2px solid #009879;
-}
-#losers tr:last-of-type
-{
-    border-bottom: 2px solid #FF0000;
+    border-bottom: 2px solid #2468ee;
 }
 table tr:not(:first-child):hover {
     font-weight: bold;
-    color: #009879;
+    color: #2468ee;
 }
-.gainers, .losers
+.indices
 {
     margin: 5%;
 }

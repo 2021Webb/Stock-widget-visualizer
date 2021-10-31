@@ -2,21 +2,48 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/screeners_css.css">
+	<link rel="stylesheet" type="text/css" href="css/indices_css.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<title>Markets</title>
 </head>
-<body onload="dis()">
+<script>
+function indi()
+{
+const settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://nse-data1.p.rapidapi.com/all_indices",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "nse-data1.p.rapidapi.com",
+		"x-rapidapi-key": "4b7e45ea30mshc52f9059608f94fp1c3b3ejsn578b2279b8e5"
+	}
+};
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+	var re=response["body"]["data"];
+	for(var i=0;i<Object.keys(re).length;i++)
+	{
+			$("#indices").append('<tr><td>'+re[i]["index"]+'</td><td>'+re[i]["open"]+'</td><td>'+
+			re[i]["high"]+'</td><td>'+re[i]["low"]+'</td><td>'+
+			re[i]["variation"]+'</td></tr>');
+	}
+});
+}
+</script>
+
+<body onload="indi()">
 	<div class="container">
 		<div class="one">
 			<ul class="logo">
 				<li><a href="landingpage.html" style="font-family: 'Allerta-Stencil'; font-size: 25px;">VELOCITY</a></li>
 			</ul>
 			<ul class="navi" style="font-weight: 500; text-transform: uppercase; font-size: 15px; color: #171717;">
-				<li><a href="indices.html">Indices</a></li>
+				<li><a href="#">Markets</a></li>
 				<li><a href="screeners.html">Screeners</a></li>
 				<li><a href="calculator.html">Calculator</a></li>
 			</ul>
@@ -25,36 +52,20 @@
 			</ul>
 		</div><!-- End of one-->
 
-		<div class="gainers">
+		<div class="indices">
 			<h2 style="text-align: center; font-family: 'Roboto', sans-serif;
-			font-size: 190%; font-weight: 400">TOP GAINERS</h2>
+			font-size: 190%; font-weight: 400">All Indices</h2>
 			<h3 style="padding-left: 5%; font-size: 140%; padding-top: 4%; font-family: 'Roboto', sans-serif; font-weight: 300">NIFTY</h3>
-			<table id="gainers">
+			<table id="indices">
 				<tr id="head">
 					<th style="padding: 2%">Symbol</th>
 					<th>Open Price</th>
 					<th>High</th>
 					<th>Low</th>
-					<th>Change</th>
+					<th>Variation</th>
 				</tr>
 			</table>
-		</div>
-		
-		<div class="losers">
-			<h2 style="text-align: center; font-family: 'Roboto', sans-serif;
-			font-size: 190%; font-weight: 400">TOP LOSERS</h2>
-			<h3 style="padding-left: 5%; font-size: 140%; padding-top: 4%; font-family: 'Roboto', sans-serif; font-weight: 300">NIFTY</h3>
-			<table id="losers">  
-				<tr id="head1">
-					<th style="padding: 2%">Symbol</th>
-					<th>Open Price</th>
-					<th>High</th>
-					<th>Low</th>
-					<th>Change</th>
-				</tr>
-			</table>
-		</div>
-		<script type="text/javascript" src="screeners_js.js"></script>
+		</div>	
 	</div>
 </body>
 </html>

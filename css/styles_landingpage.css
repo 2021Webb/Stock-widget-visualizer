@@ -9,8 +9,8 @@
 }
 *
 {
-	margin: 0px;
-	padding: 0px;
+	margin: 0%;
+	padding: 0%;
 	box-sizing: border-box;
 }
 ul, ul a
@@ -29,17 +29,17 @@ ul, ul a
 }
 .navi
 {
-	padding: 20px;
-	right: 500px;
+	padding: 2%;
+	right: 33%;
 }
 .logo
 {
-	padding: 20px;
+	padding: 1.5%;
 }
 .login
 {
-	padding: 20px;
-	right: 0px;
+	padding: 1.7%;
+	right: 0%;
 }
 .one
 {
@@ -49,32 +49,29 @@ ul, ul a
 .logo, .navi, .login
 {
 	position: absolute;
-	top: 0px;
+	top: 0%;
 
 }
 .textOnImage1, .textOnImage3
 {
 	position: absolute;
-	top: 200px;
-	left: 0px;
+	top: 34%;
+	left: 0%;
 }	
 .textOnImage2
 {
 	position: absolute;
-	top: 370px;
-	right: 150px;
 }
 .one img 
 {
 	width: 100%;
-	margin-top: -100px;
-	height: 785px;
+	margin-top: -15%;
 }
 p
 {
 	font: 25px 'FF Tisa Sans Pro' ,Arial, Helvetica;
 	color: white; 
-	padding: 15px;
+	padding: 0.9%;
 }
 .Social, .Products, .Company
 {
@@ -89,24 +86,19 @@ p
 }
 .Social ul
 {
-	margin-left: 192px; 
+	margin-left: 40%; 
 }
 .Products ul
 {
-	margin-left: 180px;
-}
-.Company ul
-{
-	margin-left: 175px;
+	margin-left: 40%;
 }
 .Footer li
 {
-	padding: 5px;
+	padding: 8%;
 }
 .Footer
 {
 	background-color: #C0C0C0;
-	margin-top: -7px;
 }
 #text1 
 {
@@ -114,16 +106,16 @@ p
 	font-family: 'Montserrat', sans-serif; 
 	font-weight: 300; 
 	text-transform: uppercase;
-	font-size: 50px;
+	font-size: 280%;
 	line-height: 1.4;
-	padding-left: 40px;
+	padding-left: 6%;
 }
 #text1_1
 {
 	font-family: 'Lora', serif;
 	color: #000000;
-	padding-left: 40px;
-	font-size: 25px;
+	padding-left: 6%;
+	font-size: 150%;
 }
 #button1
 {
@@ -132,78 +124,78 @@ p
 	color: #000000;
 	font-family: 'Lora', serif;
   border: none;
-  padding: 15px 32px;
+  padding: 2% 4%;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin-right: 600px;
-  margin-top: 30px;
+  font-size: 100%;
+  margin-right: 75%;
+  margin-top: 3%;
 }
 .social_1 img
 {
-	width: 80px;
+	width: 90%;
 }
 .social_1
 {
 	width: 14.2%;
 	float: left;
-	padding: 40px;
+	padding: 3%;
 }
 .social:after
 {
 	content: "";
-  display: table;
-  clear: both;
+	display: table;
+	clear: both;
 }
 #heading_for_social
 {
 	color: #000000;
-	padding: 10px;
-	padding-bottom: 30px;
-	font-size: 60px;
+	padding: 1.4%;
+	padding-bottom: 2.8%;
+	font-size: 350%;
 	font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
+    font-weight: 500;
 }
 .social
 {
-	padding: 70px;
+	padding: 7%;
 }
 .stock, .crypto, .futures
 {
 	height: 33.33%;
 	border: 2px solid black;
-	padding: 10px;
+	padding: 1%;
 	width: 90%;
 	margin: auto;
 	border-radius: 10px;
 }
 .stock img, .crypto img, .futures img
 {
-	width: 200px;
-	height: 200px;
+	width: 16%;
+	height: 12%;
 	float: left;
-	padding-top: 20px;
+	padding-top: 3%;
 }
 .stock p, .crypto p, .futures p
 {
 	color: #000000;
 	font-family: 'Quattrocento', serif;
-	font-size: 20px;
-	padding-left: 250px;
+	font-size: 130%;
+	padding-left: 21%;
 }
 .stock h2, .crypto h2, .futures h2
 {
-	font-size: 50px;
-	padding: 10px;
-	padding-left: 250px;
-	padding-bottom: 40px;
+	font-size: 320%;
+	padding: 1%;
+	padding-left: 21%;
+	padding-bottom: 3%;
 	font-family: 'Oswald', sans-serif;
 }
 .stock a, .crypto a, .futures a
 {
 	float: right;
-	margin-right: 40px;
-	font-size: 20px;
+	margin-right: 3%;
+	font-size: 117%;
 	text-decoration: none;
 	color: #000000;
 }

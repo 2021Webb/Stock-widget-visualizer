@@ -1,3 +1,20 @@
+var dark=0;
+function toggle()
+{
+    if(dark==0)
+    { 
+      document.documentElement.setAttribute('data-theme', 'dark');
+      document.getElementById('image').src = "pictures/light.svg";
+      dark = 1;
+    }
+    else if (dark==1)
+    {
+      document.documentElement.setAttribute('data-theme', 'light');
+      document.getElementById('image').src = "pictures/dark.svg";
+      dark = 0;
+    }
+}
+
 function openCity(evt, cityName) 
 {
   var i, tabcontent, tablinks;

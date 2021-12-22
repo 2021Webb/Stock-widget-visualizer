@@ -63,4 +63,8 @@ function dis()
 				res1[i]["perChange"]+'</td></tr>');
 		}
 	});
+
 }
+
+
+

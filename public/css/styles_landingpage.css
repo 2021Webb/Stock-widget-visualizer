@@ -131,6 +131,20 @@ p
   margin-right: 75%;
   margin-top: 3%;
 }
+#button2
+{
+	border-radius: 12px;
+	background-color: #f8f8ff;
+	color: #000000;
+	font-family: 'Lora', serif;
+  border: none;
+  padding: 2% 4%;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  margin-right: 75%;
+  margin-top: 3%;
+}
 .social_1 img
 {
 	width: 90%;

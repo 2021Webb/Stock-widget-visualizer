@@ -4,7 +4,7 @@
   "description": "You can use the [editor on GitHub](https://github.com/2021Webb/Stock-widget-visualizer/edit/main/README.md) to maintain and preview the content for your website in Markdown files.",
   "main": "landingpage.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node login.js"
   },
   "repository": {
     "type": "git",
